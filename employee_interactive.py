@@ -5,7 +5,7 @@ class Person:
         self.email = email
     
     def get_details(self):
-        print(self.name, self.surname, self.email, sep="\n")
+        print(self.name, self.surname, self.email, sep="\nyt")
 
 class Employee(Person):
     def __init__(self, name, surname, email, employee_id, department):
@@ -36,7 +36,7 @@ while True:
             my_entries.append(Employee(name, surname, email, employee_id, department))
             break
     except ValueError:
-        print("incomplet infomation")
+        print("incomplete information")
         
 print("\n ---Final Report ---")
 for entry in my_entries:
